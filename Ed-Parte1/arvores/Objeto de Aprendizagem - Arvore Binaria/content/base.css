@@ -1,0 +1,251 @@
+/*  =================================================
+     eXe
+     Copyright 2004-2005, University of Auckland
+
+     style for  SOPHIA
+   ================================================== */
+
+
+body {
+    padding-left: 10px;
+    background: #FFFFFF;
+	font-family: verdana;
+	font-size: 10px;
+}
+
+a { 
+    color: #1a4780;
+    border: 0;
+	text-decoration: none;
+}
+
+a:hover {
+    background-color:  !important;  	
+	text-decoration: underline;
+}
+
+
+
+/*Título do objeto*/
+p#nodeTitle { 
+    color: #FFFFFF;
+    
+    font-weight: bold !important;
+    letter-spacing: 3px !important;
+	text-align: right  !important;
+	padding-left: 30% !important;
+	
+	font-family:  verdana !important;
+	font-size: 11px !important;
+	
+
+	padding-top: 30px !important;
+	
+	margin-bottom:  35px !important;
+    
+	}
+
+
+/*todo o objeto*/
+#main{
+
+background: url(nodeTitle_bg.jpg) no-repeat  0 0;		/*imagem do cabeçalho do objeto*/
+
+}
+
+div#nodeDecoration {
+    border-top: 0px solid #B3B3B3;
+    border-bottom: 0px solid #B3B3B3;
+    
+
+    
+}
+
+/* --- iDevice Styles --- */
+
+/*iDevices para a utilização em objetos sem "aba" (filme em flash, texto livre, ...)*/
+.emphasis0 {
+    padding-bottom: 20px;
+}
+
+/*iDevices para a utilização em objetos com "aba" (atividade, quizz, ...)*/
+.emphasis1 {
+   background-color: #FFFFFF;
+   border-bottom: 0px solid #9d9d9d;
+   background-image:url(icon_esq.gif) ; /*borda arredondada da aba -- lado esquerdo*/
+   background-position:top left;
+   background-repeat:no-repeat;
+   margin-bottom: 30px;
+   text-align:left;
+   
+    
+
+}
+
+
+.iDevice p, .iDevice div.block {
+   padding-left: 0px;
+   line-height: 16px;
+   text-align:left;
+   
+}
+
+
+.iDevice li {
+	list-style-position: outside;
+}
+
+
+/*Título do iDevices*/
+.iDeviceTitle {
+	
+
+   color: white;
+   font-family: verdana;
+   font-size: 13px;
+   font-weight:bold;
+   letter-spacing:-1px;
+   vertical-align: top;
+       
+   padding-bottom: 4px !important;
+   padding-right: 10px !important;
+   
+   margin-bottom: 0px !important;
+   margin-left: 08px !important;   
+
+   background-color: #1a4780; 
+   background-image:url(icon_dir.gif); /*borda arredondada da aba -- lado direito*/
+   background-position:top right; 
+   background-repeat:no-repeat;
+   
+   top: 0;
+   
+} 
+
+.emphasis0 .iDeviceTitle {
+   color: #568D14;
+   font-size: 24px;
+   font-weight:bold;
+   letter-spacing:-1px;
+   vertical-align: top;
+   background: transparent; 
+   padding-bottom: 4px;
+   padding-right: 10px;
+   margin-bottom: 0px;
+   
+   background-image:none;
+   background-position:top right;
+   background-repeat:no-repeat;
+   background-color: #0054A6;
+   
+ }
+
+/*Ícone da borda idevice*/
+.iDevice_icon {
+/*   margin-top: -10px;
+   margin-left: 10px;
+   padding-right: 10px;*/
+   background-image:none;
+   background-color: #1a4780;	
+   visibility: hidden;	/*esconder figura*/   
+   
+   width: 0px; /*largura zero: para não deslocar o título da aba*/
+}
+
+
+.block{
+	font-size: 11px !important;			
+}
+
+
+/*dentro do iDevice*/
+.iDevice_inner {
+   color:#4d4d4d;
+   background-color: #FFFFFF !important; /*cor de fundo branca*/
+	position: relative;
+   /*padding: 10px;
+   margin: 10px;
+   margin-top: 12px;
+   padding-top: 10px;*/
+   background-image:none;
+
+   font-family: verdana !important;		
+   font-size: 11px !important;		
+      	
+
+   border-color: #b3d4e4;
+   border-width: 1px ;
+   border-style: solid;
+}
+
+.emphasis0 .iDevice_inner {
+   color:#4d4d4d;
+   background-color: transparent;
+   padding: 10px;
+   margin: 10px;
+   margin-top: 12px;
+   padding-top: 10px;
+
+}
+
+/* styles for iDevices with Feedback and form buttons */
+
+input.feedbackbutton {
+	background: #DBE992;
+}
+
+p.reading_feedback {
+   border: 1px dashed #ADADAD;
+   background-color: #FFF;
+}
+
+
+/* styles for image with text iDevice */
+
+.image_text { 
+	border: 1px solid #9D9D9D;
+	background: transparent;
+	padding: 4px;
+        margin: 0px 20px 4px 4px;
+}
+
+
+/*-- previous and next controls --*/
+
+/*anterior*/
+.previouslink{
+   color: white;
+   font-family: verdana;
+   font-size: 15px;
+   font-weight:bold;
+   letter-spacing:-1px;
+   
+   background: url(anterior.gif) no-repeat 0 0; /*figura de fundo "anterior"*/
+   height: 25px !important;
+   width: 76px;
+   position: absolute;
+   text-decoration: none;
+   text-align: center;
+   vertical-align: middle;
+   margin-top: 1px;
+
+}
+
+/*próximo*/
+.nextlink{
+   color: white;
+   font-family: verdana;
+   font-size: 15px;
+   font-weight:bold;
+   letter-spacing:-1px;
+   
+   background: url(proximo.gif) no-repeat 0 0; /*figura de fundo "próximo"*/
+   height: 25px !important;
+   width: 76px;
+   position: absolute;
+   text-decoration: none;
+   margin-left: 69px; 
+   text-align: center;
+	vertical-align: middle;
+	margin-top: 1px;
+}
